@@ -181,7 +181,9 @@ npm有一套CommonJS为基础包规范，但与CommonJS并不完全一致，其�
 #### 3.4 调试
 
 [debugger（调试器）](http://nodejs.cn/api/debugger.html)
+
 [Node 调试工具入门教程](http://www.ruanyifeng.com/blog/2018/03/node-debugger.html)
+
 [nodejs调试指南](https://juejin.im/post/5b60202df265da0f8145f887)
 
 
