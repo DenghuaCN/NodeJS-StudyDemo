@@ -92,7 +92,7 @@ hello.test();
 ```
 注意，模块接口的唯一变化是使用`module.exports = Hello`代替了`exports.Hello = Hello`。在外部引用该模块时，其接口对象就是要输出的Hello对象本身，而不是原先的exports。
 
-**警告：**不可以通过exports直接赋值代替对`module.exports`赋值。exports实际上只是一个module.exports指向同一个对象的变量，它本身会在模块执行结束后释放，但module不会，因此只能通过指定module.exports来改变访问接口。
+**警告** 不可以通过exports直接赋值代替对`module.exports`赋值。exports实际上只是一个module.exports指向同一个对象的变量，它本身会在模块执行结束后释放，但module不会，因此只能通过指定module.exports来改变访问接口。
 
 **3.2.3 创建包**
 包是在模块基础上更深一步的抽象，Node.js的包类似于C/C++的函数库或者JAVA/.Net的类库。它将某个独立的功能封装起来，用于发布、更新、依赖管理和版本控制。Node.js根据CommonJS规范实现了包机制，开发了npm来解决包的发布和获取需求。
